@@ -6,7 +6,7 @@
 project(PDFNetPython CXX)
 cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
 
-find_package(PythonLibs ${PYTHON_VERSION} REQUIRED)
+find_package(PythonLibs ${PYTHONLIBS_VERSION_STRING} REQUIRED)
 
 if (PYTHONLIBS_FOUND)
     if ("${PYTHONLIBS_VERSION_STRING}" MATCHES "^[2]+[\\.0-9]*$")
